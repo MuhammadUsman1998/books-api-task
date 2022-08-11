@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #faf9f6;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #1669f5;
+}
+.header i {
+  margin-right: 12px;
+  margin-top: 5px;
+  color: white;
+}
+.header h1 {
+  font-size: 30px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.forms {
+  margin-top: 12px;
+}
+.btn {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.AutoComplete {
+  margin: 0 auto;
+  width: 300px;
+  border: 3px solid #d4d4d4;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.AutoComplete input {
+  width: 100%;
+  background-color: white;
+  border: none;
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px 10px 0 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d4d4d4;
+  border-radius: 0 0 10px 10px;
+  overflow-y: scroll;
+  height: 100px;
+}
+
+.suggestions li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.AutoComplete li:hover {
+  background-color: #1669f5;
+  color: white;
+}
+.loadingDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
